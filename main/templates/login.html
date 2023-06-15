@@ -1,0 +1,102 @@
+﻿{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}<title>login</title>{% endblock title %}
+{% block extrahead %}
+<link rel="stylesheet" href="{% static 'css/login.css' %}">
+<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+{% endblock extrahead %}
+
+{% block content %}
+
+<section id="banner">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <p class="promo-title">منصة تقدم حلول مبتكرة وفعالة لمساعدة الشركات في استقطاب رأس المال البشري
+          السيبراني المناسب
+        </p>
+        <p class="text-muted"> منصة تقدم حلول مبتكرة وفعالة لمساعدة الشركات في استقطاب رأس المال البشري
+          السيبراني المناسب، وذلك من خلال منظومة متكاملة تستخدم تقنيات الذكاء الاصطناعي لتحليل المتقدمين
+          للوظيفة واختيار الأنسب للشركة ، وإعطاء نصائح واقتراحات للمرفوضين من الوظيفة.
+        </p>
+      </div>
+      <div class="col-md-6 text-center">
+        <img src="image/logo.png" class="img-fluid bannerimg">
+      </div>
+    </div>
+  </div>
+
+  <!----------- waves ---------->
+  <div id="waves">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#ffff" fill-opacity="1"
+        d="M0,128L40,112C80,96,160,64,240,69.3C320,75,400,117,480,112C560,107,640,53,720,42.7C800,32,880,64,960,90.7C1040,117,1120,139,1200,138.7C1280,139,1360,117,1400,106.7L1440,96L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z">
+      </path>
+    </svg>
+  </div>
+</section>
+
+
+{% comment %}
+<!------------- services section 2-----------> {% endcomment %}
+<section id="registarion">
+  <div class="container">
+    <h2 class="mt-5 mb-4 title1"> ابداء رحلتك لتطوير مسارك المهني </h2>
+    <form id="registarion" method="POST" action="/landing.php">
+      <h4>المعلومات الأساسية</h4>
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="form-group">
+            <label for="gender">الجنس</label>
+            <select name="gender" class="form-control" required>
+              <option value="1" selected>أنثى</option>
+              <option value="0">ذكر</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="form-group">
+            <label for="fname">الاسم</label>
+            <input class="form-control" type="text" placeholder=" الاسم" id="name" name="name" data-validation="letters"
+              required>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="form-group">
+            <label for="mobile">رقم الجوال</label>
+            <input class="form-control" type="number" placeholder="رقم الجوال" id="mobile" name="mobile"
+              data-validation="phonesaudi" required>
+
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="form-group">
+            <label for="email">البريد الإلكتروني</label>
+            <input class="form-control" type="email" placeholder="البريد الإلكتروني" id="email" name="email"
+              data-validation="email">
+
+          </div>
+        </div>
+
+        <div class="col-sm-3">
+          <div class="form-group">
+            <label for="myfile">السيرة الذاتية </label>
+            <input class="form-control" type="file" placeholder="اختر الملف " id="myfile" name="myfile"
+              data-validation="myfile">
+
+          </div>
+        </div>
+      </div>
+      <button type="submit" class="mb-5">تقديم طلب الخدمة</button>
+
+    </form>
+  </div>
+</section>
+{% endblock content %}
+
+{% block scripts %}
+<script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+{% endblock scripts %}

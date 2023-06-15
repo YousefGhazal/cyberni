@@ -1,0 +1,31 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script defer src="https://use.fontawesome.com/releases/v5.15.3/js/all.js"
+		integrity="sha384-haqrlim99xjfMxRP6EWtafs0sB1WKcMdynwZleuUSwJR0mDeRYbhtY+KPMr+JL6f" crossorigin="anonymous">
+	</script>
+	<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	{% block title %}<title>Cyberni </title>{% endblock title %}
+	{% block extrahead %}{% endblock extrahead %}
+</head>
+
+<body>
+	{% include "parts/nav.html" %}
+	{% block content %}
+	{% endblock content %}
+	{% include "parts/footer.html" %}
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+	{% block scripts %}
+  {% endblock scripts %}
+</body>
+
+</html>
