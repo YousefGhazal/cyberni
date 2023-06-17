@@ -11,3 +11,11 @@ class Profile(models.Model):
 
     def __str__(self):
         return f"Profile of {self.user.username}"
+
+
+class Cert(models.Model):
+    name = models.CharField(max_length=100)
+    text = models.TextField()
+
+    def __str__(self):
+        return self.name

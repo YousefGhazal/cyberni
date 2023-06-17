@@ -127,4 +127,4 @@ MEDIA_ROOT = join(BASE_DIR, "staticfiles_build", "media")
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
-LOGIN_REDIRECT_URL = "home"
+LOGIN_REDIRECT_URL = "result"
