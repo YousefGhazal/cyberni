@@ -9,6 +9,17 @@ from django.contrib.auth.models import User
 def index_view(request):
     return render(request, "about-us.html")
 
+def callus_view(request):
+    return render(request, "call-us.html")
+
+
+def employer_view(request):
+    return render(request, "employer.html")
+
+
+def questions_view(request):
+    return render(request, "questions.html")
+
 
 @login_required()
 def dashboard_view(request):
