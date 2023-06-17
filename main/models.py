@@ -1,40 +1,13 @@
 from django.db import models
-
-class Certificat(models.Model):
-    CERTIFICAT_CHOICES = [
-        ("CISSP", "CISSP"),
-        ("CISA", "CISA"),
-        ("Security +", "Security +"),
-        ("CEH", "CEH"),
-        ("CISM", "CISM"),
-        ("GSEC", "GSEC"),
-        ("SSCP", "SSCP"),
-        ("CASP+", "CASP+"),
-        ("GCIH", "GCIH"),
-        ("OSCP", "OSCP"),
-        ("CTIA", "CTIA"),
-        ("CHFI", "CHFI"),
-        ("CND", "CND"),
-        ("CF", "CF"),
-        ("CRISC", "CRISC"),
-        ("CySA+", "CySA+"),
-        ("CCSP", "CCSP"),
-        ("CSSLP", "CSSLP"),
-        ("CCFP", "CCFP"),
-        ("CCNA", "CCNA"),
-        ("CCNP", "CCNP"),
-        ("GPEN", "GPEN"),
-        ("CCSK", "CCSK"),
-        ("CSC", "CSC"),
-        ("CFR", "CFR"),
-        ("eJPT", "eJPT"),
-        ("eCIR", "eCIR"),
-        ("CSA", "CSA"),
-        ("C|CT", "C|CT"),
-        ("ECSA", "ECSA"),
-    ]
+from django.contrib.auth.models import User
 
 
-class Client(models.Model):
-    certificate = models.CharField(choices=CERTIFICAT_CHOICES)
-    note = models.TextField()
+class Profile(models.Model):
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    name = models.CharField(max_length=50, null=True, blank=True)
+    mobile = models.PositiveIntegerField()
+    email = models.EmailField(unique=True)
+    cv = models.FileField()
+
+    def __str__(self):
+        return f"Profile of {self.user.username}"
