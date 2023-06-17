@@ -71,7 +71,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = "cyberni.wsgi.app"
+WSGI_APPLICATION = "cyberni.wsgi.application"
 
 
 # Database
