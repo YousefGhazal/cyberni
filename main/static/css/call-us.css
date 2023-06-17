@@ -6,7 +6,7 @@ body{
     font-family: 'Tajawal', sans-serif;
 }
 .navbar{
-    background-image: linear-gradient(to right,  #000000, #b294ff);
+    background-image: linear-gradient(to right,  #2AC8D7, #69ABEA);
 }
 #navbarNavDropdown{
     text-align: right;
@@ -51,7 +51,7 @@ body{
 }
 /*banner*/
 #banner{
-    background-image: linear-gradient(to right,  #000000, #b294ff);
+    background-image: linear-gradient(to right,  #2AC8D7, #69ABEA);
     color: #fff;
     text-align: right ;
 }
@@ -96,7 +96,7 @@ body{
     color: rgb(108, 117, 125);
 }
 #call-us  .btn-primary:hover{
-    background-image: linear-gradient(to right,  #000000, #b294ff);
+    background-image: linear-gradient(to right,  #2AC8D7, #69ABEA);
     border: none;
     color: #fff;
 }
@@ -110,7 +110,7 @@ body{
     background-color: #f7f7f7;
     text-align: right;
     direction: rtl;
-    background-image: linear-gradient(to right,  #000000, #b294ff);
+    background-image: linear-gradient(to right,  #2AC8D7, #69ABEA);
     border: none;
 }
 .lineborder{
@@ -145,6 +145,6 @@ body{
 }
 .footer .btn-primary:hover{
     color: #fff;
-    background-image: linear-gradient(to right,  #000000, #b294ff);
+    background-image: linear-gradient(to right,  #2AC8D7, #69ABEA);
     border: none;
 }
