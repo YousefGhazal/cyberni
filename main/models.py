@@ -15,6 +15,10 @@ class Profile(models.Model):
 
 class Cert(models.Model):
     name = models.CharField(max_length=100)
+    name_ar = models.CharField(max_length=100)
+    link = models.URLField(default="https://www.isc2.org/Certifications/CISSP")
+    price = models.CharField(max_length=7)
+    shortcut = models.CharField(max_length=10)
     text = models.TextField()
 
     def __str__(self):

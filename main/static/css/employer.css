@@ -6,7 +6,8 @@ body{
     font-family: 'Tajawal', sans-serif;
 }
 .navbar{
-  background-image: linear-gradient(to right,  #2AC8D7, #69ABEA);
+  background-image: linear-gradient(to right, #000000, #2644a7
+);
 }
 #navbarNavDropdown{
     text-align: right;
@@ -51,7 +52,8 @@ body{
 }
 /*banner*/
 #banner{
-  background-image: linear-gradient(to right,  #2AC8D7, #69ABEA);
+  background-image: linear-gradient(to right, #000000, #2644a7
+);
   color: #fff;
   text-align: right ;
 }
@@ -125,7 +127,8 @@ body{
 
 /* Add a light grey background on mouse-over */
 #myBtnContainer button:hover {
-  background-image: linear-gradient(to right,  #2AC8D7, #69ABEA);
+  background-image: linear-gradient(to right, #000000, #2644a7
+);
   border: none;
  color:white;
 }
@@ -175,7 +178,8 @@ button {
     border: .5px solid rgb(108, 117, 125);
 }
 button:hover{
-  background-image: linear-gradient(to right,  #2AC8D7, #69ABEA);
+  background-image: linear-gradient(to right, #000000, #2644a7
+);
   border: none;
   color: #fff;
 }
@@ -248,7 +252,8 @@ hr {
   background-color: #f7f7f7;
   text-align: right;
   direction: rtl;
-  background-image: linear-gradient(to right,  #2AC8D7, #69ABEA);
+  background-image: linear-gradient(to right, #000000, #2644a7
+);
   border: none;
 }
 .lineborder{
@@ -283,6 +288,7 @@ hr {
 }
 .footer .btn-primary:hover{
   color: #fff;
-  background-image: linear-gradient(to right,  #2AC8D7, #69ABEA);
+  background-image: linear-gradient(to right, #000000, #2644a7
+);
   border: none;
 }
